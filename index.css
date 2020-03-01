@@ -1,0 +1,94 @@
+#conteneur{
+    background-image:url(../accueil/fond.png);
+    background-size: cover;
+    background-color: rgb(255, 255, 255, 5)
+    
+}
+/* debut du code css pour la barre menu */
+#menu{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: rgb(255,255,255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+#menu a{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+#menu a li {
+    text-decoration: none;
+    position: relative;
+    color: black;
+    font-size:25px;
+    font-weight: 400;
+    font-family: sans-serif;    
+    display: block;
+    overflow:hidden;
+    transition:1s all;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+#menu a li:before{
+    content: '';
+    width: 60px;
+    position: absolute;
+    border-bottom: 8px solid darkred;
+    bottom: 0;
+    right: 400px;
+    transition: 1s all;
+}
+#menu a li:hover:before{
+    right: 0;
+}
+/*fin du code css pour le menu barre*/
+/* je suis entrain de modifier la taille de la photo logo[kondop]*/
+.logo{
+    margin: 0;
+    border-radius: 50px;
+    width:150px;
+    height:150px;
+    float: left;
+
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(255,255,255);
+    color: darkred;
+    text-align: center;
+    border-radius: 20px 10px 20px 10px;
+}
+.centre {
+    text-align: center;
+    background-color: rgba(255,255,255, .5); 
+    padding: 10px
+}
+.ab{
+    font-size: 50px
+}
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(../accueil/fond.png)  ;
+    background-size: cover;
+    animation-name: diapo;
+    animation-timing-function: linear;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;    
+    
+}
+@keyframes diapo{
+    90%{background: url(../accueil/fond.png)}
+}
+
+
+
+

@@ -1,0 +1,151 @@
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(../paris/image2.jpg) center center fixed no-repeat;
+    animation-name: diapo;
+    background-size: cover;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+}
+/* ici j'ai essayer de faire dfiler les images du background*/
+@keyframes diapo{
+    0%{background: url(../paris/image.png)}
+      35%{background: url(../paris/image1.jpg)}
+    70%{background: url(../paris/image2.jpg)}
+
+}
+/* ici je  vais tenter  de  definir le body*/
+#conteneur{
+    width: px;
+    margin: 0 auto;
+    padding: 0 10px;
+    padding-top: 15px;
+}
+h1{display: inline-block; vertical-align: middle;}
+h2{display: inline-block; font-size:12px color #3c76fa;
+}
+section{
+    padding:10px;
+    background-color: rgba(255,255,255, .5);
+}
+/* nous allons essayer de mettre de l'ombre   au niveau du coté gauche*/
+.ombre{
+    box-shadow: 0 0 10px #999;
+}
+/* ici on va modifier l'espace vers le bas des article*/
+section article{
+    margin-bottom: 20px; 
+}
+section article h1{
+    font-size: 20px;
+    margin: 0 10px 0;
+}
+section article p{
+    margin: 0;
+    font-size: 16px;
+}
+/* ici on essaye de modifier le design du footer*/
+section article footer{
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+/*ici on essaye de faire en sorte que la photo apparaisse a gauche de l'article*/
+section article .flottantgauche{
+    float:left;margin-right: 10px;
+}
+section article .flottantdroite{
+    float: right; margin-left: 10px;
+}
+/*ici  on va definir le design du bloc dans lequel l'article  se trouve*/
+section.ombre1{
+    display: inline-block;
+    vertical-align:top;
+    width: 155px;
+    padding: 10px;
+}
+section.contenu{
+    display: inline-block;
+    vertical-align:top;
+    width: 831px;
+    padding: 10px;
+    margin: 0 10px;
+}
+section.pub{
+    display: inline-block;
+    vertical-align:top;
+    width: 175px;
+    padding: 0;
+
+}
+/* ici on va definir la taille de police des articles dans le bloc central*/
+section .ombre1 p{font-size:10px;}
+/*ici c'est le design des titres  dans l'article*/
+section .ombre1  h1{
+    text-transform:uppercase;
+    font-size:16px;
+    color: blue;
+    font-weight: 100px;
+}
+section .ombre1 h1 .bdc{
+    text-transform: lowercase;
+}
+/*ici on donne une couleur au titre de paragraphe a gauche*/
+.rouge{color: red;}
+
+/* ici on va essayer de faire de petits blocs a gauche*/
+  Section .rectangle{
+    background: gray;
+    border-radius: 15px ;
+    padding: 5px;
+    margin: 10px 0;
+}
+/*ici on va  definir le design des titres des differents petits blocs de gauche*/
+ section .rectangle h2 {
+     font-size:12px;
+     font-weight: 100px;
+     margin: 0;
+     text-transform: uppercase;
+ }
+  /*ici  on va commencer a gerer   la partie des  menu*/
+ ul{
+     margin: 0;
+     padding: 0 0 1px;
+     list-style-type: none;
+ }
+ a li{
+     display: block;
+     width: 164px;
+     height: 35px;
+     background: gray;
+     color: black; 
+     font-size: 14px;
+     line-height: 35px;
+     text-decoration: none;
+     padding-left: 15px;
+ }/* ici on definie la hauteur  la couleur et les espacement entre les differents  elements*/
+ a:hover{background: gray}/* ici on va rendre le menu horizontal avec une couleur de fond plutot grise*/
+ li{float: left;
+}/* contribut a l'alignement  horizontal du menu*/
+ marquee{ 
+    background-color: rgba(255,255,255, .5);
+ }/* ici on va essayer de mettre un fond transparent dans lequel les photos vont defiler*/
+ a:active { 
+    background-color: rgba(255,255,255, .5);
+}
+.logo{
+    margin: 0;
+    border-radius: 50px;
+    width:150px;
+    height:150px;
+    float: left;
+}/*ici on va  tenter d'embellir le logo du site*/
+.titre{
+    color: rgba(255,255,255, .5);
+}
+.photo{
+    height: 200px;
+}/* pour que les photos occupent le maximum d'espace entre le menu et l'article*/
